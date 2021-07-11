@@ -1,6 +1,7 @@
 import { createApp, h } from 'vue';
 import VueMaterialAdapter from 'vue-material-adapter';
 import App from './App.vue';
+import { square, cube } from './math';
 
 // mount app
 const app = createApp({
@@ -10,3 +11,5 @@ const app = createApp({
 app.use(VueMaterialAdapter);
 
 app.mount('#app');
+
+console.log(square(2));
