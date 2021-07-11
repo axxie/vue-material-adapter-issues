@@ -71,4 +71,4 @@ app.use(snackbar);
 
 This solution requires using custom resover for webpack. This is because individual components within the vue-material-adapter package contain raw unprocessed sources. The use specialized import with their own resolution rules based on the presence of the tilde character (`~`).
 
-The demo of the workaround can be found in this repository in the bundle-size-issue-workaround branch.
+The demo of the workaround can be found in this repository in the [bundle-size-issue-workaround](https://github.com/axxie/vue-material-adapter-issues/tree/bundle-size-issue-workaround) branch.
