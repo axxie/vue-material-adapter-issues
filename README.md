@@ -6,13 +6,6 @@ Demonstrate issue with bundle size when using vue-material-adapter.
 
 The built bundle includes all components from vue-material-adapter and from @material.
 
-### Versions
-vue-material-adapter: 2.0.3
-npm: 6.12.1
-node: v12.13.1
-OS: Windows 10 21H1 (OS Build 1904.1055)
-Browser: any/doesn't matter
-
 ## Steps to reproduce
 
 1. Create project with vue and vue-material-adapter. Only use button, dialog and snackbar components.
@@ -50,11 +43,11 @@ Just to make sure that tree-shaking works, the `main.js` in the [demo repository
 
 ```javascript
 import { square, cube } from './math';
-:
+...
 console.log(square(2));
 ```
 
-One can manually inspect `app.<hash>.js` file in the `dist` directory. It only contains `square` function (look for 'n*n' string), but doesn't contain `cube` function.
+One can manually inspect `app.<hash>.js` file in the `dist` directory. It only contains `square` function (look for "n*n" string), but doesn't contain `cube` function.
 
 # Workaround
 
